@@ -5,4 +5,4 @@ const connection = async () => {
     await mongoose.connect(process.env.MONGODB_URL)
 }
 
-module.exports = connectio
+module.exports = connection
