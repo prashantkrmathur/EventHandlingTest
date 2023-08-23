@@ -90,7 +90,7 @@ const Login = () => {
                 </Form.Item>
             </Form>
             <h4 className='w-100 text-center mt-2' style={{ marginLeft: "13em" }}>
-                Have an account  ? <Link to='/login'>Login</Link>
+                Have an account  ? <Link to='/signup'>Signup</Link>               
             </h4>
             {
                 response && response.data && response.data.success &&
