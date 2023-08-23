@@ -26,7 +26,7 @@ const registerController = async (req, res) => {
         });
         return res.status(200).send({
             success: true,
-            message: "user registerd Successfully",
+            message: "User registerd Successfully",
             user,
         });
     } catch (error) {
@@ -70,7 +70,7 @@ const loginController = async (req, res) => {
         });
         res.status(200).send({
             success: true,
-            message: "login Successfully",
+            message: "Login Successfully",
             user: {
                 firstName: user.firstName,
                 lastName: user.lastName,
@@ -81,7 +81,7 @@ const loginController = async (req, res) => {
     } catch (error) {
         res.status(500).send({
             success: false,
-            message: "error in login",
+            message: "Error in login",
             error,
         });
     }
