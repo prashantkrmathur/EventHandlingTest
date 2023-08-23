@@ -27,7 +27,7 @@ const Signup = () => {
                 'Content-Type': 'application/json'
             }
         };
-        const response = await axios.post("http://localhost:2244/api/newuser", JSON.stringify(values), customConfig);
+        const response = await axios.post("https://ill-moccasins-bass.cyclic.cloud/api/newuser", JSON.stringify(values), customConfig);
         setResponse(response.data.message)
         formRef.current?.resetFields();
     };
